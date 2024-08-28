@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome To Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <img src="th.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main>
+        <h1>Hi Guys, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <div class="image-placeholder">1366x578</div>
+    </main>
+    
+    <section class="facilitation">
+        <h2>Our Facilitation</h2>
+        <div class="facilitation-items">
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Professional Teacher</p>
+            </div>
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Sport Field</p>
+            </div>
+            <div class="facilitation-item">
+                <div class="circle"></div>
+                <p>Classroom</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-us">
+        <h2>Message Us</h2>
+        <form id="message-form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="birthdate">Tanggal Lahir</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="gender">Jenis Kelamin</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                <label for="female">Perempuan</label>
+            </div>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output">
+            <p>Current time: <span id="current-time"></span></p>
+            <p>Nama: <input> <span id="output-name"></span></p>
+            <p>Tanggal Lahir:<input> <span id="output-birthdate"></span></p>
+            <p>Jenis Kelamin: <input><span id="output-gender"></span></p>
+            <p>Pesan: <input><span id="output-message"></span></p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Created By Rohman</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
